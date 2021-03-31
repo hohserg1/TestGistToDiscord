@@ -26,7 +26,7 @@ jobs:
       id: get
       uses: andymckay/get-gist-action@master
       with:
-        gistURL: "https://gist.github.com/andymckay/c290f9c904502e98da98e59124610b93" 
+        gistURL: "https://gist.github.com/hohserg1/db19850b6aa0ef3926d3f4a9c26a858e" 
     - name: Show Gist contents
       id: run
       run: |
