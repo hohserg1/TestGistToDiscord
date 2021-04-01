@@ -31,6 +31,12 @@ jobs:
       id: run
       run: |
         cat ${{ steps.get.outputs.file }}
+    - name: send message
+      uses: appleboy/discord-action@master
+      with:
+        webhook_id: ${{ secrets.WEBHOOK_ID }}
+        webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+        message: The Test event triggered first step.
         
         
         
